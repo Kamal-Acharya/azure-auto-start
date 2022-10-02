@@ -39,12 +39,3 @@ if(authout[0]==0):
     autostart()
 else:
     print("Authentication failed",authout[1])
-
-
-# VM deallocated
-# az vm show -d  --name anugrah1  --resource-group anugrah1-RG  --query powerState  -o json
-# az vm get-instance-view --name manish-microk8s --resource-group MANISH-MICROK8S-RG --query instanceView.statuses  -o json
-
-# az vm show -d  --name manish-microk8s  --resource-group manish-microk8s-RG  --query "powerState"  -o tsv 
-
-# az login --service-principal -u faa31a16-d9fe-4e9d-9fc9-56cddde425bd -p FH48Q~1yqXQ81oF.abHHazekZaQscIfXwU2Q.awM --tenant aee9b2ed-7ecc-4cb2-bfed-6d0d71c0e957 
