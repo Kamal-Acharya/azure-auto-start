@@ -23,7 +23,9 @@ def list_vm_rgs():
     rg_list=rg_list.split()
     create_timestamp=create_timestamp.split()
     current_time=datetime.now()
+    print(create_timestamp,current_time)
     right_format=[current_time-(datetime.strptime(x[:19],'%Y-%m-%dT%H:%M:%S')) for x in create_timestamp]
+    print(right_format)
     demo_ind=vm_list.index('demo-new')
     vm_list.pop(demo_ind)
     rg_list.pop(demo_ind)
@@ -42,7 +44,6 @@ def list_vm_rgs():
     # print(vm_list, rg_list, right_format)
     return vm_list,rg_list,right_format
 
-list_vm_rgs()
 authout=auth()
 if(authout[0]==0):
     print("Authentication is successed")
