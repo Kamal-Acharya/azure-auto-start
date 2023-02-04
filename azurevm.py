@@ -26,7 +26,7 @@ def list_vm_rgs():
     print(create_timestamp,current_time)
     right_format=[current_time-(datetime.strptime(x[:19],'%Y-%m-%dT%H:%M:%S')) for x in create_timestamp]
     print(right_format)
-    demo_ind=vm_list.index('demo-new')
+    demo_ind=vm_list.index('demo-new2')
     vm_list.pop(demo_ind)
     rg_list.pop(demo_ind)
     right_format.pop(demo_ind)
